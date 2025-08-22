@@ -1,0 +1,29 @@
+# PDFMark Project Structure Guide
+
+## Main Entry Points
+- [app.py](mdc:app.py) - FastAPI web application with modern UI
+- [pdf_to_markdown.py](mdc:pdf_to_markdown.py) - Command-line conversion script
+- [start_webui.py](mdc:start_webui.py) - Web UI startup script
+
+## Core Components
+- [install_requirements.py](mdc:install_requirements.py) - Dependency management
+- [README.md](mdc:README.md) - Bilingual project documentation (Chinese/English)
+
+## Directory Structure
+- `uploads/` - Temporary file upload directory for web interface
+- `outputs/` - Generated Markdown files output directory
+- `static/` - Static assets for web interface
+
+## Key Functions
+- `extract_text_with_pymupdf()` - PDF text extraction using PyMuPDF
+- `detect_headings()` - Intelligent heading detection and hierarchy preservation
+- `clean_markdown()` - Format optimization and cleanup
+
+## Technology Stack
+- **Backend**: FastAPI, PyMuPDF, PyPDF2
+- **Frontend**: HTML/CSS/JavaScript with modern responsive design
+- **File Processing**: pandas for data handling
+description:
+globs:
+alwaysApply: false
+---

@@ -1,0 +1,35 @@
+# Internationalization Guidelines
+
+## Bilingual Support
+- All user-facing text should support both Chinese and English
+- Documentation in [README.md](mdc:README.md) is bilingual
+- Web interface provides Chinese and English instructions
+- Error messages should be clear in both languages
+
+## Chinese Text Handling
+- Use UTF-8 encoding throughout the application
+- Handle Chinese numbering formats: `一、二、三、`
+- Support Chinese chapter titles: `第一章`, `第二章`
+- Preserve Chinese text formatting and spacing
+
+## Character Encoding
+- Always use UTF-8 encoding in Python files
+- Include encoding declaration: `# -*- coding: utf-8 -*-`
+- Handle special characters in file names
+- Ensure proper display in web interface
+
+## Localization Best Practices
+- Use descriptive variable names that work in both languages
+- Provide clear examples in both Chinese and English
+- Consider cultural differences in document formatting
+- Test with various Chinese document types
+
+## Documentation Standards
+- Maintain parallel structure in bilingual documentation
+- Keep Chinese and English versions synchronized
+- Use consistent terminology across languages
+- Include language-specific examples when helpful
+description:
+globs:
+alwaysApply: false
+---

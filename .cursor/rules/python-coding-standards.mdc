@@ -1,0 +1,44 @@
+# Python Coding Standards for PDFMark
+
+## Code Style
+- Use UTF-8 encoding with `# -*- coding: utf-8 -*-` header
+- Follow PEP 8 style guidelines
+- Use descriptive variable and function names
+- Add comprehensive docstrings for all functions
+
+## Import Organization
+```python
+# Standard library imports
+import os
+import re
+from pathlib import Path
+
+# Third-party imports
+import fitz  # pymupdf
+import pandas as pd
+from fastapi import FastAPI, File, UploadFile
+
+# Local imports (if any)
+```
+
+## Function Documentation
+Always include docstrings with:
+- Function purpose in Chinese and English
+- Parameter descriptions
+- Return value descriptions
+- Usage examples when appropriate
+
+## Error Handling
+- Use try-except blocks for file operations
+- Provide meaningful error messages
+- Handle edge cases gracefully
+
+## PDF Processing Best Practices
+- Always close PDF documents after processing
+- Use context managers when possible
+- Validate file existence before processing
+- Handle encoding issues for Chinese text
+description:
+globs:
+alwaysApply: false
+---

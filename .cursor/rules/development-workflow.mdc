@@ -1,0 +1,35 @@
+# Development Workflow
+
+## Project Setup
+1. Install dependencies: `python install_requirements.py`
+2. Test command-line version: `python pdf_to_markdown.py`
+3. Start web interface: `python start_webui.py`
+
+## Development Process
+1. **Feature Development**: Add new heading detection patterns to `detect_headings()`
+2. **Testing**: Test with various PDF formats and document types
+3. **Documentation**: Update [README.md](mdc:README.md) with new features
+4. **Code Review**: Ensure both Chinese and English documentation are updated
+
+## Testing Guidelines
+- Test with academic papers, technical documents, and regulatory files
+- Verify heading hierarchy preservation
+- Check Chinese text handling
+- Validate web interface functionality
+- Test file upload and download processes
+
+## Code Organization
+- Keep core logic in `pdf_to_markdown.py` for command-line use
+- Web interface in [app.py](mdc:app.py) should reuse core functions
+- Maintain consistency between command-line and web versions
+- Use shared utility functions for common operations
+
+## Deployment Considerations
+- Ensure all dependencies are documented in `install_requirements.py`
+- Test cross-platform compatibility (Windows, macOS, Linux)
+- Verify file encoding handling for international users
+- Consider performance optimization for large PDF files
+description:
+globs:
+alwaysApply: false
+---

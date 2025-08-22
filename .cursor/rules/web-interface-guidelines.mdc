@@ -1,0 +1,41 @@
+# Web Interface Guidelines
+
+## FastAPI Application Structure
+- Main app: [app.py](mdc:app.py)
+- Static files served from `static/` directory
+- File uploads handled in `uploads/` directory
+- Outputs generated in `outputs/` directory
+
+## API Endpoints
+- `GET /` - Main web interface
+- `POST /upload` - File upload and conversion
+- `GET /download/{filename}` - Download converted files
+
+## Frontend Design Principles
+- Responsive design for mobile and desktop
+- Modern, clean UI with intuitive navigation
+- Drag-and-drop file upload support
+- Real-time progress feedback
+- Error handling with user-friendly messages
+
+## File Handling
+- Validate file types (PDF only)
+- Implement proper file cleanup
+- Use secure file naming conventions
+- Handle large file uploads gracefully
+
+## User Experience
+- Provide clear instructions in Chinese and English
+- Show conversion progress and status
+- Offer preview of converted content
+- Enable easy download of results
+
+## Security Considerations
+- Validate uploaded files
+- Sanitize file names
+- Implement proper error handling
+- Avoid exposing sensitive file paths
+description:
+globs:
+alwaysApply: false
+---
